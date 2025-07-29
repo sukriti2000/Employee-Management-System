@@ -31,36 +31,43 @@ A full-stack **Employee Management System** built with **Node.js**, **Express**,
 ```bash
 git clone https://github.com/YOUR_USERNAME/employee-management-system.git
 cd employee-management-system
-
 2. Install Dependencies
-
+bash
+Copy
+Edit
 npm install
-
 3. Create .env File
 Create a .env file in the root directory and add:
+
+env
+Copy
+Edit
 PORT=3000
 MONGO_URL=mongodb+srv://your-user:your-password@cluster.mongodb.net/dbname
 CORS_STATUS=true
 UI_SERVER_PORT=8000
 UI_API_ENDPOINT=http://localhost:3000/graphql
-
-
 4. Start the Server
-npm start
+bash
+Copy
+Edit
 npm start
 You should see:
 
+pgsql
+Copy
+Edit
 Successfully connected to database!
 Server started listening on port 3000...
 UI started on port 8000...
-
 🛠️ GraphQL Playground
 Navigate to http://localhost:3000/graphql to explore the GraphQL API and run queries/mutations.
 
 📮 Sample Queries
 ➕ Add Employee
 graphql
-
+Copy
+Edit
 mutation {
   createNewEmployee(emp: {
     id: "EMP001",
@@ -79,6 +86,8 @@ mutation {
 }
 📋 Get All Employees
 graphql
+Copy
+Edit
 query {
   getAllEmployees(filter: "FullTime") {
     id
