@@ -28,13 +28,13 @@ A full-stack **Employee Management System** built with **Node.js**, **Express**,
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/YOUR_USERNAME/employee-management-system.git
 cd employee-management-system
-2. Install Dependencies
+
+### 2. Install Dependencies
 npm install
 
-3. Create .env File
+### 3. Create .env File
 Create a .env file in the root directory and add:
 env
 Copy
@@ -45,7 +45,7 @@ CORS_STATUS=true
 UI_SERVER_PORT=8000
 UI_API_ENDPOINT=http://localhost:3000/graphql
 
-4. Start the Server
+### 4. Start the Server
 bash
 npm start
 You should see:
